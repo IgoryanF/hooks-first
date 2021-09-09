@@ -1,0 +1,25 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s linear;
+}
+
+.modal__content {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    transform: scale(0.5);
+}
+
+.modal__content.active {
+    transform: scale(1);
+    transition: transform 0.5s linear;
+}
